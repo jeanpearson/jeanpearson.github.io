@@ -1,101 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-   <link rel="stylesheet" href="font-awesome/fontawesome-free-6.4.0-web/css/all.min.css">
-   <link rel="shortcut icon" href="jeanpearsonc.png" type="image/x-icon">
-   <link rel="stylesheet" href="style.css">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-   <title>Jean Pearson Casilang</title>
-
-   <style>
-      .nav-item .nav-link {
-         color: #c9c9c9;
-      }
-
-      .active .nav-link {
-         color: #fff !important;
-      }
-
-      .bg-dark {
-         background-color: #000 !important;
-      }
-
-      .ico-black {
-         color: #000 !important;
-      }
-
-      .img-white {
-         color: #fff;
-      }
-
-   </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   <header>
-      <nav class="navbar text-center navbar-expand-lg fixed-top navbar-dark bg-dark">
-         <div class="container">
-            <a class="navbar-brand" href="#"><span><img class="img-white" src="jeanpearsonc.png" alt="" height="30" width="30"></span>jeanpearsonc</a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-            </button>
-           
-            <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo02">
-               <ul class="navbar-nav ">
-                  <li class="nav-item active">
-                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#">About Me</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#">Technologies</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#">Contacts</a>
-                  </li>
-               </ul>
-              
+    <main id="main">
+        <section id="hero">
+            <div class="container">
+                <div class="hero-box">
+                    <h1>Jean Pearson Casilang</h1>
+                    <h3>Web Developer & Wordpress Developer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
             </div>
-         </div>
-      </nav>
-   </header>
+        </section>
 
-   <main id="main">
-      <section class="homepage" id="home" name="hero">
-         <div class="homepage-content">
-            <div class="box">
-               <h1 class="">Hello I'm</h1>
-               <h2>Jean Pearson Casilang</h2>
-               <h6>Web Developer</h6>
-               <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dicta similique in illum quia. Dolore numquam repudiandae quidem ad nemo animi voluptate, corrupti porro quibusdam quaerat eveniet et quam similique!
-               </p>
+        <section id="about">
+            <div class="container">
+                <p id="about-title">know <span>about</span> Me</p>
+                <div class="about-box">
+                    <img src="" alt="" width="500" height="400">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit aliquam modi expedita temporibus soluta dolorem commodi, ea illum quam distinctio ratione doloremque explicabo tenetur laboriosam perspiciatis molestiae obcaecati? Recusandae, perspiciatis.</p>
+                </div>
             </div>
-            <div class="boxx">
-               <img src="" alt="">
+        </section>
+
+        <section id="technology">
+            <div class="container">
+                <p id="technology-title">Some <span>Technology</span> I've learned</p>
+                <div class="techno-box">
+                    <div class="tech-items">
+                        <h4>Programming Languages</h4>
+                        <p>Java</p>
+                        <p>Python</p>
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>PHP</p>
+                        <p>Javascript</p>
+                    </div>
+                    <div class="tech-items">
+                        <h4>Tools</h4>
+                        <p>PyCharm</p>
+                        <p>Netbeans IDE</p>
+                        <p>Eclipse</p>
+                        <p>Sublime Text</p>
+                        <p>Android Studio</p>
+                        <p>VS Code</p>
+                    </div>
+                    <div class="tech-items">
+                        <h4>Frameworks</h4>
+                        <p>Bootstrap</p>
+                        <p>Tailwind CSS</p>
+                        <p>W3School CSS</p>
+
+                    </div>
+                    <div class="tech-items">
+                        <h4>Database</h4>
+                        <p>MySQL</p>
+                        <p>MongoDB</p>
+                        <p>Firebase</p>
+                    </div>
+                </div>
             </div>
-         </div>
-      </section>
-   </main>
+        </section>
 
-   <footer>
-      <div class="bottom">
-         <p>Jean Pearson Casilang <span>@</span></p>
-         <div class="social-media">
-            <ul class="media">              
-               <a target="_blank" href="https://www.facebook.com/luxxeArc"><li class="ico-black"><i class="fa-brands fa-facebook-f"></i></li></a>
-               <a target="_blank" href="https://www.linkedin.com/in/jeanpearsonc"><li class="ico-black"><i class="fa-brands fa-linkedin-in"></i></li></a>
-               <a target="_blank" href="https://github.com/jeanpearsonc"><li class="ico-black"><i class="fa-brands fa-github"></i></li></a>
-            </ul>
-         </div>
-      </div>
-   </footer>
+        <section id="resume">
+            <div class="container">
+                <p id="resume-title"><span>Resume</span></p>
+                <div class="resume-box">
+                    <p id="box-title">Experience</p>
+                    <div class="box-content">
+                        <span><b>Jan 2022 - April 2022</b></span>
+                        <h2>Internship</h2>
+                        <p>Registrar, PHINMA - University of Pangasinan</p>
+                    </div>
+                </div>      
+                
+                <div class="resume-box">
+                    <p id="box-title">Education</p>
+                    <div class="box-content">
+                        <span><b>June 2018 - June 2022</b></span>
+                        <h2>BS Information Technology</h2>
+                        <p>PHINMA - University of Pangasinan</p>
+                    </div>
+                </div> 
 
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+                <div class="resume-box">
+                    <p id="box-title" style="visibility: hidden;"></p>
+                    <div class="box-content">
+                        <span><b>June 2012 - April 2018</b></span>
+                        <h2>High School Diploma</h2>
+                        <p>Calasiao Comprehensive National High School</p>
+                    </div>
+                </div> 
+            </div>    
+        </section>
+
+        <footer id="footer">
+            <div class="container">
+                <div class="footer-box">
+                    <div class="email-box">
+                        <p>Contact me at</p>
+                        <a href="mailto:jeanpearsonc@gmail.com">jeanpearsonc@gmail.com</a>
+                    </div>
+
+                    <div class="get-in-touch-box">
+                        <p>Get in Touch</p>
+                        <a href="">Facebook</a>
+                        <a href="">Instagram</a>
+                        <a href="">GitHub</a>
+                        <a href="">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
 </body>
 </html>
