@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    box-sizing: content-box;
+    line-height: 1.8;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 80vw;
+    margin: auto;
+}
+
+#hero {
+    background: rgba(0, 0, 0, 0.8);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.hero-box {
+    height: 100vh;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero h1 {
+    font-size: 6.5vw;
+}
+
+#hero h3 {
+    font-size: 3vw;
+    margin: 0 0 16px 0;
+}
+
+#hero p {
+    font-size: 2vw;
+}
+
+#about {
+    margin: 30vh 0;
+}
+
+.about-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.about-box img {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.about-box p {
+    width: 100%;
+    max-width: 500px;
+    margin: 16px auto;
+    font-size: 14pt;
+    color: #464646;
+}
+
+
+.techno-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+ 
+}
+
+.techno-box .tech-items {
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+}
+
+.tech-items h4 {
+    font-size: 16pt;
+    margin: 16px 0;
+}
+
+.tech-items p {
+    font-size: 14pt;
+    margin: 12px 0;
+    color: #464646;
+}
+
+
+
+#resume {margin: 30vh 0;}
+
+.resume-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.resume-box #box-title {
+    font-size: 16pt;
+    margin-top: 30px;
+}
+
+.resume-box .box-content {
+    width: 500px;
+    padding: 6vw 6vh;
+    box-shadow: 1px 1px 2px #464646;
+    margin: 16px 0;
+}
+
+.box-content span {
+    font-size: 12pt;
+    color: #464646;
+}
+
+.box-content p {
+    color: #464646;
+}
+
+#footer {
+    height: 80vh;
+    background-color: #cccccc;
+}
+
+.footer-box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 16px 0;
+}
+
+.footer div {
+    width: 100%;
+    max-width: 500px;
+}
+
+.email-box, .get-in-touch-box {
+    padding: 6vw 6vh;
+}
+
+.email-box p, .get-in-touch-box p {
+    font-size: 16pt;
+    margin: 0 16px;
+}
+
+.email-box a, .get-in-touch-box a {
+    color: #464646;
+    font-size: 16pt;
+    text-decoration: none;
+    margin: 10px 16px;
+}
+
+.get-in-touch-box a {
+    display: block;
+}
+
+
+#about-title, #technology-title, #resume-title {
+    text-align: center;
+    margin: 16vh 0;
+    font-size: 24pt;
+    text-transform: capitalize;
+}
+
+#about-title span, #technology-title span, #resume-title span {
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+
+
