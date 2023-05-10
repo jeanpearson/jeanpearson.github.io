@@ -1,188 +1,445 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Montserrat:wght@600&display=swap');
+html {
+    scroll-behavior: smooth;
+}
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
 }
 
-
-body {
-    box-sizing: content-box;
-    line-height: 1.8;
-}
-
-h1, h2, h3, h4, h5, h6, p, span, a {
-    font-family: 'Montserrat', sans-serif;
-}
+body {box-sizing: content-box;}
 
 .container {
-    width: 80vw;
-    margin: auto;
+    width: 1280px;
+    margin: 0 auto;
 }
 
+/* Hero */
 #hero {
-    background: rgba(0, 0, 0, 0.8);
-    background-attachment: fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.300), rgba(0,0,0,0.300)), url('img/hero-background.png');
+    background-size: 100% 100%;
     background-repeat: no-repeat;
+    background-origin: content-box;
+    background-attachment: fixed;
 }
 
 .hero-box {
-    height: 100vh;
-    color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 100vh;
 }
 
-#hero h1 {
-    font-size: 6.5vw;
+.hero-box h1 {
+    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
 }
 
-#hero h3 {
-    font-size: 3vw;
-    margin: 0 0 16px 0;
+.hero-box h3 {
+    color: #ffffff9f;
+}
+/*  ---- */
+.mb-16 {
+    margin:0px 0px 16px 0px;
 }
 
-#hero p {
-    font-size: 2vw;
+.mtb-16 {
+    margin: 16px 0;
 }
 
+/* about */
 #about {
-    margin: 30vh 0;
+
 }
 
-.about-box {
+.about-box,
+.technology-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.about-box .about-content-box,
+.technology-box .technology-content-box,
+.resume-box .resume-content-box {
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-evenly;
 }
 
-.about-box img {
-    width: 100%;
+.about-content-box img {
     max-width: 500px;
-    margin: 0 auto;
 }
 
-.about-box p {
-    width: 100%;
+.about-content-box p {
     max-width: 500px;
-    margin: 16px auto;
-    font-size: 14pt;
+    font-family: 'Montserrat Alternative', sans-serif;
+    font-size: 18px;
     color: #464646;
 }
 
 
-.techno-box {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-around;
- 
-}
-
-.techno-box .tech-items {
-    width: 100%;
-    max-width: 250px;
+/* technologies */
+.technologies {
+    width: 250px;
     text-align: center;
 }
 
-.tech-items h4 {
-    font-size: 16pt;
-    margin: 16px 0;
+.technologies h3 {
+    font-size: 20px;
 }
 
-.tech-items p {
-    font-size: 14pt;
-    margin: 12px 0;
+.technologies p {
+    font-size: 18px;
+    margin: 0 0 16px 0;
     color: #464646;
 }
 
-
-
-#resume {margin: 30vh 0;}
-
+/* resume */
 .resume-box {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
 }
 
-.resume-box #box-title {
-    font-size: 16pt;
-    margin-top: 30px;
+
+.resume-content-box h5 {
+    width: 100%;
+    max-width: 500px;
+    font-size: 18px;
+    letter-spacing: 1px;
 }
 
-.resume-box .box-content {
-    width: 500px;
-    padding: 6vw 6vh;
-    box-shadow: 1px 1px 2px #464646;
-    margin: 16px 0;
+.resume-content-box div {
+    width: 100%;
+    max-width: 600px;
+    padding: 50px 50px;
+    box-shadow: 1px 1px 1px 1px #464646;
 }
 
-.box-content span {
-    font-size: 12pt;
+.resume-content-box .content-box h6 {
+    font-size: 16px;
     color: #464646;
+    letter-spacing: 1px;
 }
 
-.box-content p {
-    color: #464646;
+.resume-content-box .content-box h3 {
+    font-size: 24px;
+    letter-spacing: 1.5px;
 }
+
+.resume-content-box .content-box p {
+    font-size: 16px;
+    color: #464646;
+    letter-spacing: 0.5px;
+}
+
+
+/* --- */
+
+/* footer  */
 
 #footer {
-    height: 80vh;
-    background-color: #cccccc;
+
 }
 
 .footer-box {
+    width: 100%;
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 16px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
 }
 
-.footer div {
+.footer-content-box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-evenly;
+}
+
+.email-box, .media-box {
     width: 100%;
     max-width: 500px;
 }
 
-.email-box, .get-in-touch-box {
-    padding: 6vw 6vh;
-}
-
-.email-box p, .get-in-touch-box p {
-    font-size: 16pt;
-    margin: 0 16px;
-}
-
-.email-box a, .get-in-touch-box a {
+.email-box a, .media-box a{
     color: #464646;
-    font-size: 16pt;
     text-decoration: none;
-    margin: 10px 16px;
-}
-
-.get-in-touch-box a {
     display: block;
-}
-
-
-#about-title, #technology-title, #resume-title {
-    text-align: center;
-    margin: 16vh 0;
-    font-size: 24pt;
-    text-transform: capitalize;
-}
-
-#about-title span, #technology-title span, #resume-title span {
-    text-transform: uppercase;
-    font-weight: 900;
+    letter-spacing: 1px;
 }
 
 
 
+/* --- */
+
+.content-line {
+    width: 1170px;
+    height: 2px;
+    border: none;
+    background-color: #03712c;
+}
+
+.after-line {
+    width: 50px;
+    height: 2px;
+    border: none;
+    background-color: #03712c;
+}
+
+
+
+@media(max-width: 768px){
+    .container {
+        width: 600px;
+    }
+
+    .hero-box h1 {
+        font-size: 26px;
+    }
+    .hero-box h3 {
+        font-size: 14px;
+    }
+    .about-box {
+        height: auto;
+        width: 100%;
+    }
+    .about-box h2 {
+        font-size: 20px;
+    }
+    .about-box .about-content-box, .resume-content-box {
+        justify-content: space-between;
+    }
+    .about-content-box img {
+        width: 100%;
+        max-width: 240px;
+        height: 240px;
+    }
+    .about-content-box p {
+        max-width: 240px;
+        font-size: 16px;
+        color: #464646;
+    }
+
+    .technology-box h2 {
+        font-size: 20px;
+    }
+
+    .technologies {
+        width: 100%;
+        max-width: 150px;
+        margin-bottom: 16px;
+    }
+    .technologies h3 {
+        font-size: 14px;
+    }
+    .technologies p {
+        font-size: 14px;
+    }
+    /* resume */
+    .content-line {
+        max-width: 600px;
+    }
+    
+    .resume-content-box h5 {
+        max-width: 200px;
+        font-size: 16px;
+    }
+
+    .resume-content-box div {
+        max-width: 400px;
+        padding: 30px 30px;
+    }
+
+    .resume-content-box .content-box h6 {
+        font-size: 12px;
+    }
+
+    .resume-content-box .content-box h3 {
+        font-size: 20px;
+    }
+
+    .resume-content-box .content-box p {
+        font-size: 12px;
+    }
+
+    .email-box, .media-box {
+        max-width: 400px;
+    } 
+
+    .resume-box h2 {
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 425px){
+    .container {
+        width: 375px;
+    }
+    .hero-box h1 {
+        font-size: 26px;
+    }
+    .hero-box h3 {
+        font-size: 14px;
+    }
+    /* about */
+    .about-box {
+        height: auto;
+        width: 100%;
+    }
+
+    .about-box .about-content-box, .resume-content-box {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .about-content-box img {
+        width: 100%;
+        max-width: 375px;
+        height: 300px;
+    }
+    .about-content-box p {
+        max-width: 375px;
+        padding: 16px 0;
+    }
+    /* technology */
+    .technology-box {
+        height: auto;
+    }
+
+    .technology-box .technology-content-box  {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .technologies {
+        width: 100%;
+        max-width: 375px;
+        margin-bottom: 16px;
+    }
+
+    .technologies h3 {
+        font-size: 16px;
+    }
+    /* resume */
+    .content-line {
+        max-width: 375px;
+    }
+
+    .resume-content-box h5 {
+        max-width: 375px;
+    }
+
+    .resume-content-box div {
+        max-width: 375px;
+    }
+
+    /* footer */
+    .footer-box {
+        height: 100vh;
+    }
+
+    .footer-box .footer-content-box {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .email-box, .media-box {
+        max-width: 375px;
+    } 
+
+    .email-box a, .media-box a {
+        font-size: 14px;
+    } 
+}
+
+@media (max-width: 375px){
+    .container {
+        width: 375px;
+    }
+
+    .hero-box h1 {
+        font-size: 24px;
+    }
+
+    .hero-box h3 {
+        font-size: 12px;
+    }
+
+    .about-box {
+        height: auto;
+        width: 100%;
+    }
+
+    .about-box .about-content-box, .resume-content-box {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about-content-box img {
+        width: 100%;
+        max-width: 300px;
+        height: 300px;
+    }
+    
+    .about-content-box p {
+        max-width: 300px;
+        padding: 16px 0;
+    }
+
+    .technology-box {
+        height: auto;
+    }
+
+    .technology-box .technology-content-box  {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .technologies {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 16px;
+    }
+
+    .content-line {
+        max-width: 320px;
+    }
+
+    .resume-content-box h5 {
+        max-width: 320px;
+    }
+
+    .resume-content-box div {
+        max-width: 320px;
+    }
+
+    .footer-box {
+        height: 100vh;
+    }
+
+    .footer-box .footer-content-box {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .email-box, .media-box {
+        max-width: 320px;
+    } 
+
+    
+
+
+}
