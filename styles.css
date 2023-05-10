@@ -18,7 +18,7 @@ body {box-sizing: content-box;}
 
 /* Hero */
 #hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.300), rgba(0,0,0,0.300)), url('img/hero-background.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.300), rgba(0,0,0,0.300)), url('/hero-background.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-origin: content-box;
